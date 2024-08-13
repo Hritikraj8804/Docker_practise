@@ -6,12 +6,8 @@ Welcome to the **Docker Practice and Projects** repository! This repo contains a
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Usage](#usage)
-- [Projects](#projects)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Introduction
 
@@ -31,5 +27,8 @@ To get started with this repository, you'll need to have Docker installed on you
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/docker-practice-and-projects.git
+git clone https://github.com/Hritikraj8804/docker-practice-and-projects.git
 cd docker-practice-and-projects
+```
+## Contributing
+Feel free to submit issues or pull requests to improve this project. Contributions are welcome!
