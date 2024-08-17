@@ -27,8 +27,8 @@ To get started with this repository, you'll need to have Docker installed on you
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/Hritikraj8804/docker-practice-and-projects.git
-cd docker-practice-and-projects
+git clone https://github.com/Hritikraj8804/Docker_practise.git
+cd Docker_practise
 ```
 ## Contributing
 Feel free to submit issues or pull requests to improve this project. Contributions are welcome!
