@@ -63,3 +63,27 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ubu
 # Get the IP address of container 2
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ubuntu_container_2
 ```
+
+### 4. Configure Hostnames (Optional but Recommended)
+You can set up hostnames in each container to make SSH connections easier:
+
+#### In Container 1:
+```bash
+docker exec -it ubuntu_container_1 bash
+
+# Edit /etc/hosts to add container 2's IP address
+echo "172.17.0.3 container2" >> /etc/hosts
+
+# Exit the container
+exit
+```
+#### In Container 2:
+```bash
+docker exec -it ubuntu_container_2 bash
+
+# Edit /etc/hosts to add container 1's IP address
+echo "172.17.0.2 container1" >> /etc/hosts
+
+# Exit the container
+exit
+```
