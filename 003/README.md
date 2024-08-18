@@ -53,3 +53,13 @@ service ssh start
 # Exit the container
 exit
 ```
+
+### 3. Obtain the IP Addresses of the Containers
+Get the IP addresses of both containers:
+```bash
+# Get the IP address of container 1
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ubuntu_container_1
+
+# Get the IP address of container 2
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ubuntu_container_2
+```
