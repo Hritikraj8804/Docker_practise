@@ -105,3 +105,11 @@ docker exec -it ubuntu_container_2 bash
 # SSH into container 1 using the hostname or IP address
 ssh root@container1
 ```
+
+### 6. Troubleshooting
+If you encounter the error ssh: connect to host <IP_ADDRESS> port 22: Connection refused, check the following:
+
+Ensure the SSH service is running: service ssh status
+Make sure SSH is installed and configured correctly in each container.
+Verify that both containers are on the same Docker network.
+Check firewall settings (if applicable).
