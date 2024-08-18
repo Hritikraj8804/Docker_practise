@@ -87,3 +87,21 @@ echo "172.17.0.2 container1" >> /etc/hosts
 # Exit the container
 exit
 ```
+
+### 5. SSH from One Container to the Other
+You can now SSH from one container to the other:
+
+#### From Container 1 to Container 2:
+```bash
+docker exec -it ubuntu_container_1 bash
+
+# SSH into container 2 using the hostname or IP address
+ssh root@container2
+```
+#### From Container 2 to Container 1:
+```bash
+docker exec -it ubuntu_container_2 bash
+
+# SSH into container 1 using the hostname or IP address
+ssh root@container1
+```
