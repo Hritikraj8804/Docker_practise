@@ -20,3 +20,36 @@ docker run -itd --name ubuntu_container_1 ubuntu
 # Create and run container 2
 docker run -itd --name ubuntu_container_2 ubuntu
 ```
+
+### 2. Install SSH Server on Both Containers
+Access each container and install the SSH server:
+
+#### In Container 1:
+```bash
+docker exec -it ubuntu_container_1 bash
+
+# Inside the container
+apt-get update
+apt-get install -y openssh-server
+
+# Start the SSH service
+service ssh start
+
+# Exit the container
+exit
+```
+
+#### In Container 2:
+```bash
+docker exec -it ubuntu_container_2 bash
+
+# Inside the container
+apt-get update
+apt-get install -y openssh-server
+
+# Start the SSH service
+service ssh start
+
+# Exit the container
+exit
+```
