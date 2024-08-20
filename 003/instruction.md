@@ -1,7 +1,7 @@
 🐋 Docker Project: SSH Connection Between Two Ubuntu Containers
 This project demonstrates how to set up and establish a Secure Shell (SSH) connection between two Ubuntu containers in Docker.
 
-Overview
+### Overview
 In this setup, Container 1 acts as the SSH server, and Container 2 connects to it as the SSH client.
 ```bash
 [ Container 1 (Ubuntu) ] --(OpenSSH Server)-->
@@ -12,4 +12,24 @@ In this setup, Container 1 acts as the SSH server, and Container 2 connects to i
           |
           |
 [ Container 2 (Ubuntu) ] --(OpenSSH Client)-->
+```
+
+### Steps
+Pull the Ubuntu image from Docker Hub:
+```bash
+docker pull ubuntu
+Create Container 1 using the Ubuntu image:
+```
+
+Create Container 1 using the Ubuntu image:
+```bash
+docker run -it --name container1 ubuntu
+Install SSH Server in Container 1:
+```
+
+Install SSH Server in Container 1:
+```bash
+apt-get update
+apt-get install openssh-server
+apt-get install nano
 ```
