@@ -50,3 +50,44 @@ Exit from Container 1:
 ```bash
 exit
 ```
+
+Create Container 2 using the Ubuntu image:
+```bash
+docker run -it --name container2 ubuntu
+Install SSH Client in Container 2:
+```
+
+Install SSH Client in Container 2:
+```bash
+apt-get install openssh-client
+Set the root password in Container 1:
+```
+
+Start Container 1:
+
+Set the root password in Container 1:
+```bash
+docker start container1
+docker exec -it container1 bash
+```
+
+Set the root password:
+```bash
+passwd root
+Connect from Container 2 to Container 1 via SSH:
+```
+
+Connect from Container 2 to Container 1 via SSH:
+
+Start Container 2:
+```bash
+docker start container2
+docker exec -it container2 bash
+Connect to Container 1:
+```
+
+Connect to Container 1
+```bash
+ssh root@<IPAddress of Container1>
+Enter the root password set earlier.
+```
