@@ -33,3 +33,20 @@ apt-get update
 apt-get install openssh-server
 apt-get install nano
 ```
+
+Edit the SSH configuration to allow root login:
+```bash
+nano /etc/ssh/sshd_config
+Set PermitRootLogin to yes.
+```
+
+Start the SSH service in Container 1:
+```bash
+service ssh start
+Exit from Container 1:
+```
+
+Exit from Container 1:
+```bash
+exit
+```
