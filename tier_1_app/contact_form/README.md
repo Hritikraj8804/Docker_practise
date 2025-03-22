@@ -33,3 +33,11 @@ To run the Docker container, use the following command:
 ```bash
 docker run -p 5000:5000 flask-app
 ```
+This will start the Flask application, mapping port 5000 on your host machine to port 5000 inside the container.
+
+### Accessing the Application
+The application can be accessed at http://localhost:5000 in your web browser or using curl:
+
+```bash
+curl http://localhost:5000
+```
