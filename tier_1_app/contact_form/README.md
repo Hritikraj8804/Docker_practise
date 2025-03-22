@@ -16,3 +16,7 @@ The Flask application serves a simple web page or API endpoint. It's designed to
 ├── app.py          # Flask application code
 ├── Dockerfile      # Dockerfile for building the image
 └── README.md       # Project documentation
+
+## Running the Application
+
+### Building the Docker Image
