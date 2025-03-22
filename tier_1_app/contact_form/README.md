@@ -9,3 +9,5 @@ The Flask application serves a simple web page or API endpoint. It's designed to
 ## Prerequisites
 
 * Docker installed on your system.
+
+## Project Structure
