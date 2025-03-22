@@ -20,3 +20,9 @@ The Flask application serves a simple web page or API endpoint. It's designed to
 ## Running the Application
 
 ### Building the Docker Image
+
+To build the Docker image, navigate to the project directory and run:
+
+```bash
+docker build -t flask-app .
+```
