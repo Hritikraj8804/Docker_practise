@@ -26,3 +26,10 @@ To build the Docker image, navigate to the project directory and run:
 ```bash
 docker build -t flask-app .
 ```
+
+### Running the Docker Container
+To run the Docker container, use the following command:
+
+```bash
+docker run -p 5000:5000 flask-app
+```
