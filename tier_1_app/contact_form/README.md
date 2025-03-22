@@ -7,3 +7,5 @@ This project is a basic Python Flask web application containerized with Docker. 
 The Flask application serves a simple web page or API endpoint. It's designed to be easily containerized and deployed using Docker.
 
 ## Prerequisites
+
+* Docker installed on your system.
