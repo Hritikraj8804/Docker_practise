@@ -12,10 +12,10 @@ The Flask application serves a simple web page or API endpoint. It's designed to
 
 ## Project Structure
 
-.
-├── app.py          # Flask application code
-├── Dockerfile      # Dockerfile for building the image
-└── README.md       # Project documentation
+.  
+├── app.py          # Flask application code  
+├── Dockerfile      # Dockerfile for building the image  
+└── README.md       # Project documentation  
 
 ## Running the Application
 
