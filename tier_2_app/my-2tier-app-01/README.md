@@ -70,3 +70,15 @@ Using `localhost` inside a Docker container did not resolve to the host machine.
 **Solution:**
 
 Replaced `localhost` with the container name (e.g., `backend-container`) when making requests from one container to another within the same Docker network.
+
+## Running the Application Manually (Without Docker Compose)
+
+1.  Create a Docker network: `docker network create my-network`
+2.  Run the backend container: `docker run -p 5000:5000 --name backend-container --network my-network hritikraj8804/my-2tier-app-01-backend`
+3.  Run the frontend container: `docker run -p 8080:80 --name frontend-container --network my-network -v $(pwd)/frontend/nginx.conf:/etc/nginx/nginx.conf hritikraj8804/my-2tier-app-01-frontend`
+4.  Access the application: `http://localhost:8080`
+
+## Running the Application with Docker Compose
+
+1.  Build and run the containers: `docker-compose up --build`
+2.  Access the application: `http://localhost:8080`
