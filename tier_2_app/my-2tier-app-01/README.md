@@ -32,3 +32,21 @@ The JavaScript `fetch()` call inside the frontend container's browser failed wit
 Configured Nginx as a reverse proxy inside the frontend container. The frontend JavaScript now makes requests to Nginx, which then forwards them to the backend container. This approach bypasses the browser's DNS resolution limitations.
 
 ### 3. Permission Denied for Docker Commands
+
+**Problem:**
+
+Running Docker commands like `docker ps` resulted in a "permission denied" error, indicating the user lacked access to the Docker daemon socket.
+
+**Solution:**
+
+Added the user to the `docker` group using `sudo usermod -aG docker $USER` and logged out and back in (or ran `newgrp docker`).
+
+### 4. Ephemeral Changes Inside Containers
+
+**Problem:**
+
+Changes made directly inside running containers using `docker exec` were lost after the container was stopped and removed.
+
+**Solution:**
+
+Modified the `Dockerfile` for the respective service (frontend or backend) to persist changes. Rebuilt the Docker image and re-ran the container.
