@@ -22,3 +22,13 @@ When attempting to scale the frontend service using `docker-compose.yml` and `de
 Implemented an Nginx reverse proxy within the frontend container. Nginx acts as a load balancer, routing requests to the backend container. This eliminates the need for multiple exposed host ports.
 
 ### 2. `TypeError: Failed to fetch` in Browser Inside Frontend Container
+
+**Problem:**
+
+The JavaScript `fetch()` call inside the frontend container's browser failed with `TypeError: Failed to fetch` and `net::ERR_NAME_NOT_RESOLVED`. This was because browsers inside Docker containers often have issues resolving container names using Docker's internal DNS.
+
+**Solution:**
+
+Configured Nginx as a reverse proxy inside the frontend container. The frontend JavaScript now makes requests to Nginx, which then forwards them to the backend container. This approach bypasses the browser's DNS resolution limitations.
+
+### 3. Permission Denied for Docker Commands
