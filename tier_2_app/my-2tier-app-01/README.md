@@ -9,3 +9,16 @@ This project demonstrates a simple 2-tier application (frontend and backend) dep
 * **`docker-compose.yml`**: Docker Compose configuration file (optional, for easier orchestration).
 * **`nginx.conf`**: Nginx configuration file for reverse proxy (solution).
 
+## Problems and Solutions
+
+### 1. Port Conflicts When Scaling Frontend
+
+**Problem:**
+
+When attempting to scale the frontend service using `docker-compose.yml` and `deploy: replicas: 5`, port conflicts occurred because multiple frontend containers tried to bind to the same host port.
+
+**Solution:**
+
+Implemented an Nginx reverse proxy within the frontend container. Nginx acts as a load balancer, routing requests to the backend container. This eliminates the need for multiple exposed host ports.
+
+### 2. `TypeError: Failed to fetch` in Browser Inside Frontend Container
