@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2-Tier App</title>
+</head>
+<body>
+    <h1>Data from Backend:</h1>
+    <div id="data">Loading...</div>
+    <script>
+        fetch('http://backend-container:5000/api/data') // or the correct port
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('data').textContent = data.message;
+        })
+        .catch(error => {
+            document.getElementById('data').textContent = 'Error: ' + error;
+        });
+    </script>
+</body>
+</html>
