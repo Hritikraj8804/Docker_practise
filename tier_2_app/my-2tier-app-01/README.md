@@ -82,3 +82,11 @@ Replaced `localhost` with the container name (e.g., `backend-container`) when ma
 
 1.  Build and run the containers: `docker-compose up --build`
 2.  Access the application: `http://localhost:8080`
+
+## Important Notes
+
+* Always rebuild Docker images after modifying Dockerfiles.
+* Use Docker networks for container communication.
+* Nginx as a reverse proxy is highly recommended for frontend scaling and browser compatibility.
+* Environment variables are useful for configuring backend URLs and other settings.
+* Browser extensions can interfere with request. Try disabling extensions if you have issues.
