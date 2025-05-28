@@ -1,9 +1,3 @@
-Okay, I understand perfectly\! The `README.md` should clearly convey that this repository showcases *multiple methods* for running the application, with Docker Compose being one excellent option among them.
-
-I will adjust the introduction and the "Getting Started" section to emphasize these "various ways."
-
------
-
 # 🗳️ Dockerized Voting Application: A Microservices Learning Sandbox
 
 This repository is a hands-on project designed to help you learn and practice core Docker concepts by building a distributed, polyglot microservices application. It demonstrates how different services, written in various programming languages, can communicate and work together seamlessly using Docker containers.
@@ -49,9 +43,9 @@ Before you begin, ensure you have the following installed on your system:
 
 ## 🚀 Getting Started: Choose Your Method\!
 
-### [Introduction](./1. Voting-app.md) 
-### [Method 1](./2. voting-app with docker.md)
-### [Method 2](./3. voting-app with docker-compose.md) 
+### [Introduction](./1_Voting-app.md) 
+### [Method 1](./2_voting-app_with+docker.md)
+### [Method 2](./3_voting-app_with_docker-compose.md) 
 
 ## 📂 Project Structure
 
