@@ -25,7 +25,7 @@ This repository is dedicated to practicing and learning Docker concepts. It cont
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
+    git clone [<repository_url>](https://github.com/Hritikraj8804/Docker_practise.git)
     cd Docker_practise
     ```
 
