@@ -22,17 +22,8 @@ Our voting application is broken down into five distinct services, each running 
 
 ### Architectural Flow
 
-```
-Browser (User)
-      |
-      V
-+------------+     +-------+     +----------+     +------------+     +-----------+
-| Vote App   | --> | Redis | --> | Worker   | --> | PostgreSQL | <-- | Result App|
-| (Python)   |     | (Queue)|    | (.NET)   |     | (Database) |     | (Node/React)|
-+------------+     +-------+     +----------+     +------------+     +-----------+
-      ^                                                            |
-      |____________________________________________________________|
-```
+![workflow](https://github.com/user-attachments/assets/4e415724-7a03-44d2-a369-4ae53beaeec1)
+
 
 This architecture highlights:
 
@@ -58,9 +49,9 @@ Before you begin, ensure you have the following installed on your system:
 
 ## 🚀 Getting Started: Choose Your Method\!
 
-### [Introduction](./) 
-### [Method 1](./)
-### [Method 2](./) 
+### [Introduction](./1. Voting-app.md) 
+### [Method 1](./2. voting-app with docker.md)
+### [Method 2](./3. voting-app with docker-compose.md) 
 
 ## 📂 Project Structure
 
