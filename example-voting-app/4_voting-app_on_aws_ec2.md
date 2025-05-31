@@ -195,6 +195,5 @@ What's next?
 * Explore **AWS Elastic Container Service (ECS)** or **Kubernetes (EKS)** for more advanced container orchestration.
 * Add **monitoring and logging** tools to your deployment.
 
-If you found this guide helpful, please share it, and feel free to star the [GitHub Repo Link Here - https://github.com/Hritikraj8804/Docker_practise.git]! Let me know if you have any questions in the comments below.
-
+If you found this guide helpful, please share it, and feel free to star the [GitHub Repo Link Here - https://github.com/Hritikraj8804/Docker_practise.git]! 
 ---
