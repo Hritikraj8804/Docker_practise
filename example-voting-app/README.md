@@ -44,9 +44,9 @@ Before you begin, ensure you have the following installed on your system:
 ## 🚀 Getting Started: Choose Your Method\!
 
 ### [Introduction](./1_Voting-app.md) 
-### [Method 1 : _voting-app with docker](./2_voting-app_with_docker.md)
+### [Method 1 : voting-app with docker](./2_voting-app_with_docker.md)
 ### [Method 2 : voting-app with docker-compose](./3_voting-app_with_docker-compose.md) 
-### [Method_3 : voting-app on aws ec2](./4_voting-app_on_aws_ec2.md)
+### [Method 3 : voting-app on aws ec2](./4_voting-app_on_aws_ec2.md)
 
 ## 📂 Project Structure
 
