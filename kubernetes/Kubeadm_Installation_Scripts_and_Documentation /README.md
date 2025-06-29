@@ -184,10 +184,8 @@ kubectl get nodes
 
 ```
 
-   <img src="https://raw.githubusercontent.com/faizan35/kubernetes_cluster_with_kubeadm/main/Img/nodes-connected.png" width="70%">
+   ![after joining workers](https://github.com/user-attachments/assets/30d30a93-44c7-460b-81a4-552276dea452)
 
 ---
 
-## Verify Container Status on Worker Node
-<img src="https://github.com/user-attachments/assets/c3d3732f-5c99-4a27-a574-86bc7ae5a933" width="70%">
 
