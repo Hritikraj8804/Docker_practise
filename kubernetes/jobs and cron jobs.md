@@ -39,7 +39,8 @@ The full Hashnode post includes detailed YAML examples for:
 
 For a complete, fun, and in-depth explanation with more analogies and code examples, check out the full blog post on Hashnode:
 
-👉 **[Link to your Hashnode post here](https://dev.to/hritikraj8804/set-it-forget-it-kubernetes-jobs-cronjobs-for-the-fun-loving-dev-4clo)** 👈
+👉 **[Link to your Hashnode post here](https://devopssre.hashnode.dev/your-k8s-chore-bots-kubernetes-jobs-and-cronjobs-unlocked-for-fun)** 👈
+👉 **[Link to your Dev.to post here](https://dev.to/hritikraj8804/set-it-forget-it-kubernetes-jobs-cronjobs-for-the-fun-loving-dev-4clo)** 👈
 
 ---
 
